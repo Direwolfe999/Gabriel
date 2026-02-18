@@ -92,12 +92,13 @@ export const AIChatbot = () => {
       } else {
         throw new Error('API request failed')
       }
-    } catch (error) {
+     } catch (error) {
       console.error('Error fetching AI response:', error)
-      // Fallback response if API fails
+      // Improved fallback responses with direct answers
       const fallbackResponses = [
-        "I apologize, but I'm having trouble connecting to my knowledge base right now. Would you like to learn more about Gabriel's data analysis expertise or Send-Eat's platform?",
-        "Thank you for your question! Gabriel specializes in data-driven decision making and growth strategies for Send-Eat. Would you like to know more about his specific skills?",
+        "Great question! Gabriel Johnson is the CEO & Founder of Send-Eat, a data-driven delivery platform. He specializes in data analytics, full-stack development, and growth operations. Would you like to know more about his expertise?",
+        "Send-Eat is a revolutionary delivery platform built on 500K+ data points, targeting 48%+ repeat order rates. Gabriel Johnson, its founder, has analyzed $5.89B in startup funding. How can I help you learn more?",
+        "Gabriel's expertise includes Power BI, Tableau, SQL, Python for data analysis, and React/Node.js for full-stack development. He's achieved 3-12x ROAS through growth operations. What would you like to explore?",
       ]
       const fallbackMessage = fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)]
       setMessages((prev) => [...prev, {

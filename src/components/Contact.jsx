@@ -75,7 +75,7 @@ export const Contact = () => {
     }
 
     return (
-        <section id="contact" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+        <section id="contact" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 dark:bg-dark-secondary light:bg-light-secondary/50">
             <div className="max-w-4xl mx-auto">
                 <motion.div
                     className="text-center mb-16"
@@ -85,12 +85,12 @@ export const Contact = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-white">Let's </span>
+                        <span className="dark:text-white light:text-gray-900">Let's </span>
                         <span className="bg-gradient-to-r from-electric-blue to-cyber-purple bg-clip-text text-transparent">
                             Collaborate
                         </span>
                     </h2>
-                    <p className="text-gray-400 text-lg">
+                    <p className="dark:text-gray-400 light:text-gray-600 text-lg">
                         Have an exciting project? I'd love to hear about it!
                     </p>
                 </motion.div>
@@ -106,7 +106,7 @@ export const Contact = () => {
                     <motion.div className="space-y-8" variants={itemVariants}>
                         <div>
                             <h3 className="text-2xl font-bold text-electric-blue mb-6">Get In Touch</h3>
-                            <p className="text-gray-400 mb-8">
+                            <p className="dark:text-gray-400 light:text-gray-600 mb-8">
                                 I'm always interested in hearing about new projects and opportunities.
                             </p>
                         </div>
@@ -176,7 +176,7 @@ export const Contact = () => {
                     >
                         {/* Name Input */}
                         <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring' }}>
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
+                            <label className="dark:block dark:text-sm dark:text-gray-300 light:block light:text-sm light:text-gray-700 font-medium mb-2">
                                 Your Name
                             </label>
                             <input
@@ -192,7 +192,7 @@ export const Contact = () => {
 
                         {/* Email Input */}
                         <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring' }}>
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
+                            <label className="dark:block dark:text-sm dark:text-gray-300 light:block light:text-sm light:text-gray-700 font-medium mb-2">
                                 Your Email
                             </label>
                             <input

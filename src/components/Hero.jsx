@@ -65,44 +65,56 @@ export const Hero = () => {
             </div>
 
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    {/* Text Content */}
-                    <motion.div
-                        className="text-center lg:text-left"
-                        variants={containerVariants}
-                        initial="hidden"
-                        animate="visible"
-                    >
-                        {/* Badge */}
-                        <motion.div
-                            className="flex items-center justify-center lg:justify-start gap-2 mb-6"
-                            variants={itemVariants}
-                        >
-                            <div className="h-px w-8 bg-gradient-to-r from-transparent to-electric-blue" />
-                            <span className="text-sm font-medium text-electric-blue flex items-center gap-1">
-                                <Sparkles size={16} />
-                                CEO • Data Analyst • Full-Stack Developer • Founder
-                            </span>
-                            <div className="h-px w-8 bg-gradient-to-l from-transparent to-electric-blue" />
-                        </motion.div>
+                {/* Background Image */}
+                <div className="absolute inset-0 -z-10 overflow-hidden dark:opacity-10 light:opacity-5">
+                    <img
+                        src="/images/main2.png"
+                        alt="Send-Eat Background"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
 
-                        {/* Main Headline */}
-                        <motion.h1
-                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
-                            variants={itemVariants}
-                        >
-                            <span className="bg-gradient-to-r from-electric-blue via-cyber-purple to-electric-blue bg-clip-text text-transparent animate-pulse">
-                                <LottieText text="Data-Driven CEO & Founder" delay={0.5} />
-                            </span>
-                            <br />
-                            <span className="text-white">
-                                <LottieText text="Building systems that scale" delay={0.8} />
-                            </span>
-                        </motion.h1>
+                {/* Text Content */}
+                <motion.div
+                    className="text-center max-w-4xl mx-auto"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    {/* Badge */}
+                    <motion.div
+                        className="flex items-center justify-center gap-2 mb-8"
+                        variants={itemVariants}
+                    >
+                        <div className="h-px w-8 bg-gradient-to-r from-transparent to-electric-blue" />
+                        <span className="text-sm font-medium text-electric-blue flex items-center gap-1">
+                            <Sparkles size={16} />
+                            CEO • Data Analyst • Full-Stack Developer • Founder
+                        </span>
+                        <div className="h-px w-8 bg-gradient-to-l from-transparent to-electric-blue" />
+                    </motion.div>
+
+                    {/* Main Headline */}
+                    <motion.h1
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight"
+                        variants={itemVariants}
+                    >
+                        <span className="bg-gradient-to-r from-electric-blue via-cyber-purple to-electric-blue bg-clip-text text-white animate-pulse">
+                            <LottieText text="Data-Driven CEO & Founder" delay={0.5} />
+                        </span>
+                        <br />
+                        
+                    </motion.h1>
+                    <motion.h3 className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-5 leading-tight"
+                        variants={itemVariants}>
+                        <span className="text-white">
+                            <LottieText text="Quantifying Success. Scaling Impact." delay={0.8} />
+                        </span>
+                    </motion.h3>
 
                         {/* Subtitle */}
                         <motion.p
-                            className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed"
+                            className="text-sm md:text-base dark:text-gray-400 light:text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
                             variants={itemVariants}
                         >
                             Full-stack founder combining strategic data intelligence, scalable backend engineering, and growth operations expertise.
@@ -122,7 +134,7 @@ export const Hero = () => {
                                 transition={{ duration: 0.3 }}
                             >
                                 <img
-                                    src="/images/img1.png"
+                                    src="/images/img3.png"
                                     alt="Gabriel Johnson - CEO & Founder"
                                     className="w-full h-80 object-cover rounded-2xl"
                                 />
@@ -177,27 +189,27 @@ export const Hero = () => {
                             className="flex flex-col sm:flex-row items-center justify-center gap-4"
                             variants={itemVariants}
                         >
-                            <motion.a
-                                href="#works"
+                            <motion.button
+                                onClick={() => document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="px-8 py-4 bg-gradient-to-r from-electric-blue to-cyber-purple text-dark font-bold rounded-lg flex items-center gap-2 hover:shadow-lg hover:shadow-electric-blue/50 transition-all"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 View Case Studies
                                 <ArrowRight size={20} />
-                            </motion.a>
+                            </motion.button>
 
-                            <motion.a
-                                href="#contact"
+                            <motion.button
+                                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="px-8 py-4 glass-effect text-electric-blue font-bold rounded-lg border border-electric-blue/30 hover:border-electric-blue hover:shadow-lg hover:shadow-electric-blue/20 transition-all"
                                 whileHover={{ scale: 1.05, backgroundColor: 'rgba(0, 217, 255, 0.1)' }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 Connect About Send-Eat
-                            </motion.a>
+                            </motion.button>
                         </motion.div>
 
-                        {/* Scroll indicator */}
+                        {/* Scroll indicator
                         <motion.div
                             className="absolute bottom-10 left-1/2 -translate-x-1/2"
                             variants={floatingVariants}
@@ -214,11 +226,12 @@ export const Hero = () => {
                                 </div>
                             </div>
                         </motion.div>
+                     </motion.div> */}
                     </motion.div>
 
                     {/* Image Content */}
                     <motion.div
-                        className="relative"
+                        className="relative mt-12"
                         variants={itemVariants}
                     >
                         <motion.div
@@ -229,8 +242,8 @@ export const Hero = () => {
                             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
                         >
                             <img
-                                src="/images/2.png"
-                                alt="Gabriel Johnson - CEO & Founder"
+                                src="/images/main1.png"
+                                alt="Gabriel Johnson - CEO & Founder of Send-Eat"
                                 className="w-full h-auto rounded-2xl shadow-2xl shadow-cyber-purple/20"
                             />
                         </motion.div>
@@ -250,7 +263,6 @@ export const Hero = () => {
                             transition={{ duration: 4, repeat: Infinity, delay: 2 }}
                         />
                     </motion.div>
-                </div>
             </div>
         </section>
     )

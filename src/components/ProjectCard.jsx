@@ -88,7 +88,7 @@ export const ProjectCard = ({ project, isLoading = false, index = 0 }) => {
 
     return (
         <motion.div
-            className="glass-effect rounded-lg overflow-hidden group cursor-pointer h-full"
+            className="dark:glass-effect light:bg-white/80 rounded-lg overflow-hidden group cursor-pointer h-full"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -97,7 +97,7 @@ export const ProjectCard = ({ project, isLoading = false, index = 0 }) => {
         >
             {/* Image Container */}
             <motion.div
-                className="relative w-full h-48 overflow-hidden bg-gray-dark"
+                className="relative w-full h-48 overflow-hidden dark:bg-gray-dark light:bg-gray-200"
                 variants={imageVariants}
             >
                 <motion.img
@@ -151,7 +151,7 @@ export const ProjectCard = ({ project, isLoading = false, index = 0 }) => {
                     <h3 className="text-xl font-bold text-electric-blue mb-2 group-hover:text-cyber-purple transition-colors">
                         {project.title}
                     </h3>
-                    <p className="text-sm text-gray-400 line-clamp-3 mb-4">
+                    <p className="dark:text-sm dark:text-gray-400 light:text-sm light:text-gray-600 line-clamp-3 mb-4">
                         {project.description}
                     </p>
                 </div>
@@ -161,7 +161,7 @@ export const ProjectCard = ({ project, isLoading = false, index = 0 }) => {
                     {project.tags?.map((tag) => (
                         <motion.span
                             key={tag}
-                            className="px-3 py-1 rounded-full text-xs font-medium bg-gray-dark text-electric-blue border border-electric-blue/30"
+                            className="px-3 py-1 rounded-full text-xs font-medium dark:bg-gray-dark dark:text-electric-blue dark:border-electric-blue/30 light:bg-gray-200 light:text-gray-700 light:border-gray-300"
                             whileHover={{ scale: 1.05 }}
                         >
                             {tag}

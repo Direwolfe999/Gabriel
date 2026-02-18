@@ -26,7 +26,7 @@ function App() {
     }, [])
 
     return (
-        <div className="min-h-screen text-white overflow-x-hidden transition-colors duration-500">
+        <div className="min-h-screen dark:bg-dark light:bg-light-bg dark:text-white light:text-gray-800 overflow-x-hidden transition-colors duration-500">
             {/* Animated mesh gradient background */}
             <div className="mesh-gradient" />
 
@@ -55,9 +55,9 @@ function App() {
             <AIChatbot />
 
             {/* Footer */}
-            <footer className="bg-dark-secondary border-t border-electric-blue/10 py-8">
+            <footer className="dark:bg-dark-secondary light:bg-light-secondary/50 border-t dark:border-electric-blue/10 light:border-gray-200 py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-gray-400 text-sm">
+                    <p className="dark:text-gray-400 light:text-gray-600 text-sm">
                         © 2026 Gabriel Johnson. CEO & Founder of Send-Eat.{' '}
                         <span className="text-electric-blue">Data</span> •{' '}
                         <span className="text-cyber-purple">Engineering</span> •{' '}

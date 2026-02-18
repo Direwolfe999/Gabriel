@@ -50,7 +50,7 @@ export const About = () => {
     ]
 
     return (
-        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-dark-secondary light:bg-light-secondary/50">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     className="text-center mb-16"
@@ -60,12 +60,12 @@ export const About = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-white">The </span>
+                        <span className="dark:text-white light:text-gray-900">The </span>
                         <span className="bg-gradient-to-r from-electric-blue to-cyber-purple bg-clip-text text-transparent">
                             Full-Spectrum Founder
                         </span>
                     </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                    <p className="dark:text-gray-400 light:text-gray-600 text-lg max-w-2xl mx-auto">
                         Combining data expertise, engineering prowess, and growth hacking into one founder vision
                     </p>
                 </motion.div>
@@ -82,14 +82,14 @@ export const About = () => {
                         <h3 className="text-2xl font-bold text-electric-blue">
                             Why Send-Eat is Different
                         </h3>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="dark:text-gray-400 light:text-gray-600 leading-relaxed">
                             Most delivery platforms are built on guesses. Send-Eat is built on <span className="text-cyber-purple font-semibold">500K+ data points</span>.
                         </p>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="dark:text-gray-400 light:text-gray-600 leading-relaxed">
                             As a data analyst at Midtown Tech Hub, I built dashboards for the ecosystem. As a web developer at Blue Marvel Capital (London),
                             I engineered scalable backend systems. As a marketing executive, I achieved 3-12x ROAS through growth operations.
                         </p>
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="dark:text-gray-400 light:text-gray-600 leading-relaxed">
                             Send-Eat combines all three: intelligent geographic routing, predictive customer segmentation, and optimized repeat-order mechanics
                             targeting 48%+ retention.
                         </p>
@@ -121,28 +121,28 @@ export const About = () => {
 
                     <motion.div className="space-y-4" variants={itemVariants}>
                         {/* Key Metrics */}
-                        <div className="glass-effect p-6 rounded-lg border border-electric-blue/20 hover:border-electric-blue/50 transition-all">
-                            <p className="text-sm text-gray-400 mb-2">Global Analysis</p>
+                        <div className="dark:glass-effect light:bg-white/80 p-6 rounded-lg border dark:border-electric-blue/20 light:border-gray-200 dark:hover:border-electric-blue/50 light:hover:border-electric-blue/30 transition-all">
+                            <p className="dark:text-sm dark:text-gray-400 light:text-sm light:text-gray-600 mb-2">Global Analysis</p>
                             <p className="text-4xl font-bold text-electric-blue">$5.89B</p>
-                            <p className="text-xs text-gray-500 mt-1">In startup funding analyzed</p>
+                            <p className="dark:text-xs dark:text-gray-500 light:text-xs light:text-gray-500 mt-1">In startup funding analyzed</p>
                         </div>
 
-                        <div className="glass-effect p-6 rounded-lg border border-cyber-purple/20 hover:border-cyber-purple/50 transition-all">
-                            <p className="text-sm text-gray-400 mb-2">Data Insights</p>
+                        <div className="dark:glass-effect light:bg-white/80 p-6 rounded-lg border dark:border-cyber-purple/20 light:border-gray-200 dark:hover:border-cyber-purple/50 light:hover:border-cyber-purple/30 transition-all">
+                            <p className="dark:text-sm dark:text-gray-400 light:text-sm light:text-gray-600 mb-2">Data Insights</p>
                             <p className="text-4xl font-bold text-cyber-purple">500K+</p>
-                            <p className="text-xs text-gray-500 mt-1">Data points processed</p>
+                            <p className="dark:text-xs dark:text-gray-500 light:text-xs light:text-gray-500 mt-1">Data points processed</p>
                         </div>
 
-                        <div className="glass-effect p-6 rounded-lg border border-electric-blue/20 hover:border-electric-blue/50 transition-all">
-                            <p className="text-sm text-gray-400 mb-2">Growth Performance</p>
+                        <div className="dark:glass-effect light:bg-white/80 p-6 rounded-lg border dark:border-electric-blue/20 light:border-gray-200 dark:hover:border-electric-blue/50 light:hover:border-electric-blue/30 transition-all">
+                            <p className="dark:text-sm dark:text-gray-400 light:text-sm light:text-gray-600 mb-2">Growth Performance</p>
                             <p className="text-4xl font-bold text-electric-blue">3-12x</p>
-                            <p className="text-xs text-gray-500 mt-1">ROAS across channels</p>
+                            <p className="dark:text-xs dark:text-gray-500 light:text-xs light:text-gray-500 mt-1">ROAS across channels</p>
                         </div>
 
-                        <div className="glass-effect p-6 rounded-lg border border-cyber-purple/20 hover:border-cyber-purple/50 transition-all">
-                            <p className="text-sm text-gray-400 mb-2">Send-Eat Target</p>
+                        <div className="dark:glass-effect light:bg-white/80 p-6 rounded-lg border dark:border-cyber-purple/20 light:border-gray-200 dark:hover:border-cyber-purple/50 light:hover:border-cyber-purple/30 transition-all">
+                            <p className="dark:text-sm dark:text-gray-400 light:text-sm light:text-gray-600 mb-2">Send-Eat Target</p>
                             <p className="text-4xl font-bold text-cyber-purple">48%+</p>
-                            <p className="text-xs text-gray-500 mt-1">Repeat order rate</p>
+                            <p className="dark:text-xs dark:text-gray-500 light:text-xs light:text-gray-500 mt-1">Repeat order rate</p>
                         </div>
                     </motion.div>
                 </motion.div>
@@ -207,6 +207,60 @@ export const About = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <ChartCard title="Sales Growth Analysis" />
                         <ChartCard title="ROAS Performance" />
+                    </div>
+                </motion.div>
+
+                {/* Image Gallery */}
+                <motion.div
+                    className="mt-16"
+                    variants={itemVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    <h3 className="text-2xl font-bold text-white text-center mb-12">
+                        Portfolio Highlights
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <motion.div
+                            className="group relative overflow-hidden rounded-lg"
+                            whileHover={{ y: -5 }}
+                        >
+                            <img
+                                src="/images/img4.png"
+                                alt="Data Analysis Dashboard"
+                                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p className="text-white text-sm font-medium">Data Analysis Dashboard</p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="group relative overflow-hidden rounded-lg"
+                            whileHover={{ y: -5 }}
+                        >
+                            <img
+                                src="/images/img5.png"
+                                alt="Creative Design Work"
+                                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p className="text-white text-sm font-medium">Creative Design</p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="group relative overflow-hidden rounded-lg"
+                            whileHover={{ y: -5 }}
+                        >
+                            <img
+                                src="/images/img6.png"
+                                alt="Additional Project"
+                                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p className="text-white text-sm font-medium">Additional Project</p>
+                            </div>
+                        </motion.div>
                     </div>
                 </motion.div>
 

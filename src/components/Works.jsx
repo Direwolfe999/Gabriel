@@ -92,7 +92,7 @@ export const Works = () => {
     }
 
     return (
-        <section id="works" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+        <section id="works" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 dark:bg-dark-secondary light:bg-light-secondary/50">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <motion.div
@@ -103,12 +103,12 @@ export const Works = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-white">Data-Driven </span>
+                        <span className="dark:text-white light:text-gray-900">Data-Driven </span>
                         <span className="bg-gradient-to-r from-electric-blue to-cyber-purple bg-clip-text text-transparent">
                             Case Studies
                         </span>
                     </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+                    <p className="dark:text-gray-400 light:text-gray-600 text-lg max-w-2xl mx-auto mb-8">
                         Investor-grade analytics projects—from $5.89B funding landscapes to 500K+ data points across e-commerce, retail, and SaaS.
                     </p>
                     <IconGrid />
