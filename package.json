@@ -1,0 +1,32 @@
+{
+  "name": "premium-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Premium portfolio site with React, Vite, Tailwind, and Framer Motion",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "chart.js": "^4.5.1",
+    "framer-motion": "^11.0.0",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "swiper": "^12.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.0.0"
+  }
+}
